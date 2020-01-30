@@ -2,3 +2,12 @@
 *{
     font-family:  "Microsoft JhengHei";
 }
+
+input[type=range] {
+    width: 500px;
+  }
+
+#DivColor{
+    width: 100px;
+    height: 100px;
+}
