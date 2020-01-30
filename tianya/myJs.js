@@ -32,10 +32,6 @@ let sender = () => {
         }
     }
 
-
-
-
-
 }
 
 let progressBarAdd = () => {

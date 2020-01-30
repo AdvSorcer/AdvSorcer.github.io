@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My test page</title>
+  <script src="myJs.js"></script>
+  <link rel="stylesheet" type="text/css" href="myCss.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">天涯明月刀-移花</h1>
+      <p class="lead">想睡覺了嗎</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div id="div_Q1">
+          <div>
+            <P>請問師傅今天上線了嗎 ?</P>
+            <input type="radio" name="radio_online" value="yes"> 有認真上線<br>
+            <input type="radio" name="radio_online" value="no"> 好像還沒?<br>
+          </div>
+        </div>
+        <div id="div_Q2" style="display: none;">
+          <P>請問師傅晚上的藥吃了嗎 ?</P>
+          <input type="radio" name="radio_medicine" value="yes"> 吃了 <br>
+          <input type="radio" name="radio_medicine" value="no"> 還沒 <br>
+        </div>
+        <div style="height: 50px;"></div>
+        <div>
+          <input type="button" onclick="sender()" value="送出" class="btn btn-primary float-right">
+        </div>
+        <div style="height: 100px;"></div>
+        <div class="progress">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0"
+            aria-valuemax="100" id="progressBar"></div>
+        </div>
+        <div style="height: 50px;"></div>
+        <label id="lbl_message"></label>
+      </div>
+      <div class="col-sm" style="visibility:hidden" id="div_Img">
+        <img src="image/background_sky.png" alt="Italian Trulli">
+        <label>送洛兒一張合照</label>
+      </div class="col-sm">
+    </div>
+  </div>
+</body>
+
+</html>
