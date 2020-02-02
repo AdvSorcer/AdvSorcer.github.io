@@ -1,34 +1,37 @@
 document.addEventListener("DOMContentLoaded", function () {
     init()
 });
-let url = "works/tldep/"
-//https://freeteatime.com/Resume/works/tldep/1.png
-let number = 1;
+let url_Tldep = "works/tldep/";
+let numberTldep = 1;
 let Next = () =>{
     let ImgTledep = document.getElementById("ImgTldep")
-    if(number==8){
-        number =0;
+    if(numberTldep==8){
+        numberTldep =0;
     }
-    number +=1;
-    let src = url + number + ".png"
+    numberTldep +=1;
+    let src = url_Tldep + numberTldep + ".png"
     ImgTledep.src = src;
 }
 let Pre =() =>{
     let ImgTledep = document.getElementById("ImgTldep")
-    number -=1;
-    if(number==0){
-        number =8;
+    numberTldep -=1;
+    if(numberTldep==0){
+        numberTldep =8;
     }
-    let src = url + number + ".png"
+    let src = url_Tldep + numberTldep + ".png"
     ImgTledep.src = src;
 }
 let init = ()=>{
+    //let PlayTldep = setInterval(Next,4000)
     let btnNext = document.getElementById('btn_next')
     btnNext.addEventListener('click',()=>{
         Next();
+        //clearInterval(PlayTldep)
     })
     let btnPre = document.getElementById('btn_pre')
     btnPre.addEventListener('click',()=>{
         Pre();
+        //clearInterval(PlayTldep)
     })
 }
+

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>My test page</title>
+  <title>蔡昀翰履歷表</title>
   <!-- <link rel="icon" href="../logo.ico" type="image/x-icon"/> -->
   <link rel="stylesheet" type="text/css" href="resume.css">
   <script src="resume.js"></script>
@@ -14,11 +14,16 @@
 <body>
 
   <!-- FirstBlock -->
-  <div>蔡昀翰 Tsai-Yun-Han</div>
-  <div>0932807031</div>
-  <div>hank2382551@gmail.com</div>
-  <div>Welcome</div>
-  <hr>
+  <div class="head" >
+    <div class="headtext">
+      <h2>蔡昀翰 Tsai-Yun-Han</h2>
+      <h2>0932807031</h2>
+      <h2>hank2382551@gmail.com</h2>
+    </div>
+
+    <img src="avatar.jpg" class="avator">
+  </div>
+ 
   <!-- Skill -->
   <div class="wrap">
     <div class="skill">
@@ -60,8 +65,8 @@
   </div>
   <!-- Experience -->
   <div class="bigCard experience">
-    <h1>環輿科技 Geographic Information Technology Co., LTD</h1>
-    <h2>Assistant Engineer 2018/03~2019/07 </h2>
+    <h2>環輿科技 Geographic Information Technology Co., LTD</h2>
+    <h3>Assistant Engineer 2018/03~2019/07 </h3>
     <ul>
       <li><a href="https://www.tldep.gov.taipei/Public/" target="_blank">環境品質資訊網建置服務案</a></li>
       <li>台電空品模擬平台 </li>
@@ -69,37 +74,70 @@
     <p>我在環輿服務了一年多，主要從事 Asp.net 的前後台開發與維護</p>
   </div>
   <div class="bigCard experience">
-    <h1>中國生產力中心 China Productivity Center</h1>
-    <h2>Part Time System Engineer 2019/10~2019/12 </h2>
+    <h2>中國生產力中心 China Productivity Center</h2>
+    <h3>Part Time System Engineer 2019/10~2019/12 </h3>
     <p>純粹因為要繳房租，找了個彈性的維護工作，入職時已明確告知主管年底離開</p>
   </div>
   <div class="bigCard aboutMe">
-    <h1>關於我</h1>
+    <h2>關於我</h2>
     <ul>
+      <li>新港國中/嘉義高中/逢甲大學(空間資訊)/上海交換半年</li>
+      <li>高中及大學遊學團小隊長</li>
       <li>樂隊經驗6年 (大鼓、手風琴、口風琴、上低音號、豎笛)</li>
       <li>零件經驗6年 我的電腦 (A10-5800K、FX-8120、E3-1230、i5-6400、r5-1600)、Surface、MBP</li>
       <li>手機經驗6年 (M7、M8、M10、U11+、Iphone Xs、小米9、紅米note2、紅米note4x、ZF6)</li>
       <li>生存遊戲1年 (狙擊不太會 還是電動步槍好 目前僅存瓦斯小槍)</li>
-      <li>喜歡歷史 (你不覺得連金滅遼、十字軍東征、希特勒崛起、文藝復興、火藥等等等很酷嗎)</li>
-      <li>喜歡時事 (319槍擊案、中美貿易戰、南韓薩德飛彈、菲律賓殺我漁民、希臘破產)</li>
+      <li>喜歡歷史 (連金滅遼、十字軍東征、希特勒崛起、文藝復興、火藥等等等很酷)</li>
+      <li>喜歡時事 (中美貿易戰、南韓薩德飛彈、菲律賓殺我漁民、希臘破產)</li>
+      <li>喜觀喝茶/米飯/社會科學</li>
       <li>LOL S1 玩家最高金2 / 快打旋風新手 / 傳說對決兩天金牌 / SF 中校 KDA 1.4 / 牧場物語 </li>
-      <li>喜觀喝茶跟米飯</li>
-      <li>喜歡社會科學</li>
-      <li>高中及大學遊學團小隊長</li>
-      <li>當工程師也是興趣之一</li>
+      <li>在學校有用過C++/JAVA/Python(各一學期沒意義的授課那種)</li>
     </ul>
     <p></p>
   </div>
-   <!-- 作品 -->
-   <div class="bigCard">
-     <div class="play" id="tldep">
-       <input type="button" id="btn_pre" value="Previus">
-       <input type="button" id="btn_next" value="Next">
-       <img src="works/tldep/1.png" id="ImgTldep">
-     </div>
-     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/sA-wnyHaf5s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-   </div>
-
+  <!-- 作品 -->
+  <div class="spaceDiv"></div>
+  <div class="portfolioCard"><h1> Portfolio｜作品集</h1> </div>
+  <div class="portfolioCard">
+    <h3>後端程式碼+JS 不含設計</h3>
+    <div class="play" id="tldep">
+      <img src="works/tldep/1.png" id="ImgTldep" loading="lazy">
+      <input type="button" id="btn_pre" value="Previus" class="btn_Play">
+      <input type="button" id="btn_next" value="Next" class="btn_Play">
+    </div>
+  </div>
+  <div class="spaceDiv"></div>
+  <div class="portfolioCard">
+    <h3>Login Design</h3>
+    <div class="play" id="tldep">
+      <img src="works/cpc/1.png"  loading="lazy">
+    </div>
+  </div>
+  <div class="portfolioCard">
+    <h3>ChromeApp</h3>
+    <a href="https://chrome.google.com/webstore/detail/%E6%99%82%E5%85%89%E5%9B%9E%E6%9C%94%E6%A9%9F/ikcagiiehfabmkihdipelhcpdchcdjbh" class="a_button">Click Me To The Store</a>
+    <div class="play" id="tldep">
+      <img src="works/chromeApp/EliminateRecords/EliminateRecords.png"  loading="lazy">
+    </div>
+  </div>
+  <div class="portfolioCard">
+    <h3>Prototype Design </h3>
+    <div class="play" id="tldep">
+      <img src="works/xd/1.png"  loading="lazy">
+    </div>
+  </div>
+  <div class="portfolioCard">
+    <h3>Report</h3>
+    <div  id="tldep">
+      <a target="_blank" href="https://drive.google.com/open?id=1HH20Fwro7d7Ha4eZSCzvz_99h2SomDvf" class="a_button">Click to View This Report</a>
+      <img src="works/report/2.png" id="ImgReport" loading="lazy" >
+    </div>
+  </div>
+  <div class="portfolioCard">
+    <h3>感謝您閱讀至此，對我的履歷有任何問題歡迎直接聯繫，就算無關工作</h3>
+    <div  id="tldep">
+    </div>
+  </div>
 </body>
 
 </html>
