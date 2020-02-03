@@ -176,3 +176,7 @@ a {
 .a_button:hover {
     background-color: rgb(184, 184, 219);
 }
+
+.introduction{
+  color: rgb(103, 105, 107);
+}
