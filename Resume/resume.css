@@ -4,10 +4,12 @@
 
 :root {
     --bg-color: #ffffff;
-    --skillCard-color: #EEDFDF;
+    --skillCard-color: #DAF5DA;
     --skillCardBorder-color: #A6A3A3;
-    --experience-color: #EEE7DF;
-    --aboutMe-color: #DAF5DA;
+    --experience-color: #F7F3D4;
+    --aboutMe-color: rgb(209, 229, 231);
+    --certified-color: rgb(218, 214, 235);
+    --portfolio-color: #EBF5EB;
 }
 
 body {
@@ -86,6 +88,13 @@ a {
     box-shadow: 4px 4px 5px #cecbcb;
 }
 
+.a_Tldep{
+    color: cornflowerblue;
+}
+.a_Tldep:hover{
+    color: rgb(162, 183, 223);
+}
+
 .portfolioCard {
     width: 900px;
     height: auto;
@@ -94,8 +103,13 @@ a {
     padding-left: 20px;
     margin-top: 10px;
     border-radius: 8px;
-    background-color: rgb(247, 244, 244);
+   
 }
+
+.portfolioColor{
+    background-color:var(--portfolio-color);
+}
+
 
 .portfolioCard img {
     width: 890px;
@@ -108,6 +122,9 @@ a {
 
 .aboutMe {
     background-color: var(--aboutMe-color);
+}
+.certified {
+    background-color: var(--certified-color);
 }
 
 /* Portfolio */
