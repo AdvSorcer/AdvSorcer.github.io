@@ -95,6 +95,11 @@ a {
     color: rgb(162, 183, 223);
 }
 
+.timeColor{
+    color: rgb(131, 131, 138);
+    margin-left: 30px;
+}
+
 .portfolioCard {
     width: 900px;
     height: auto;
